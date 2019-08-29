@@ -1,0 +1,657 @@
+/*效果*/
+
+
+/*下划线*/
+.HideUnderline:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    border-radius: 2px;
+    transition: ease-in-out all .5s;
+}
+
+
+.DisplayUnderline:after {
+    background-color: #ffffff;
+    margin-left: -50%;
+    width: 100%;
+}
+
+
+/*菜单按钮*/
+.Menu {
+    /*position: absolute;
+    top: 12px;
+    left: 15px;*/
+    display: none;
+}
+
+.menuLines {
+    display: block;
+    height: 5px;
+    width: 20px;
+    margin-bottom: 9px;
+    padding-left: 20px;
+    background-color: white;
+    transform-origin: 0 50%;
+}
+
+@keyframes Rotate0 {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+
+@keyframes Rotate1 {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes flyOut {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+    }
+}
+
+@keyframes flyIn {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+/*链接*/
+a {
+    text-decoration: none;
+    color: rgb(237, 236, 236);
+}
+
+a:hover {
+    color: rgb(255, 254, 254);
+}
+
+a:active {
+    color: rgba(255, 255, 255, 0.64);
+}
+
+
+/*Logo*/
+#Logo {
+
+    margin: 0 auto;
+    font-size: 35px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    user-select: none;
+}
+
+#Logo a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*Search*/
+.Search {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display: none;
+}
+
+.Search input {
+    outline: none;
+    font-size: 20px;
+    background-color: inherit;
+    border: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+.Search:before {
+    content: url("../icon/search_32.png");
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    /*background-color: white;*/
+    position: relative;
+    top: 5px;
+    left: 0;
+}
+
+.MediumSearch input {
+    display: none;
+}
+
+
+/*Tab*/
+
+/*横向*/
+
+
+.TransverseTab {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
+    user-select: none;
+}
+
+.TransverseTab .TransverseTabContent {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+
+/*纵向*/
+.PortraitTab {
+
+}
+
+.PortraitTab .PortraitTabContent {
+
+}
+
+/*图片转盘*/
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel .pictures {
+    width: 500%;
+    transition: .5s;
+}
+
+.carousel .pictures li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.carousel .pictures li a {
+    display: inline-block;
+}
+
+.carousel .pictures li a img {
+
+}
+
+.carousel .tags {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+
+.carousel .tags li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.carousel .tags li a {
+    display: block;
+    background-color: #25325b;
+    width: 50px;
+    height: 7px;
+    border-radius: 5px;
+    border: 3px solid #eeeeee;
+}
+
+.carousel .tags li a:hover {
+    height: 10px;
+    transition: .4s;
+    background: #45315a;
+}
+
+.carousel .tags li .active {
+    height: 10px;
+    background: #45315a;
+}
+
+/*carousel end*/
+
+.block {
+    padding-bottom: 50px;
+}
+
+/*block Head Start*/
+.titleTab {
+    user-select: none;
+    padding: 30px 0 20px;
+}
+
+.titleTab li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.titleTab li h1 {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.titleTab li a {
+    /*color: white;*/
+    font-size: 20px;
+    padding: 5px;
+}
+
+.titleTab li a:hover {
+    color: #fff;
+    transition: .5s;
+}
+
+/* blockHead end*/
+
+/*website item start*/
+.website-item {
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: #25325b;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.website-item div {
+    display: flex;
+    align-items: center;
+}
+
+.website-item .website-icon {
+    background-image: url("https://www.baidu.com/favicon.ico");
+    width: 32px;
+    height: 32px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 2px;
+    flex-shrink: 0;
+    border-radius: 3px;
+}
+
+.website-item .website-name-medium {
+    margin-right: 30px;
+    margin-left: 10px;
+    height: inherit;
+}
+
+.website-item .website-name:hover {
+    color: white;
+}
+
+.website-item .website-introduce {
+    color: white;
+    flex-grow: 1;
+    margin-right: 20px;
+    user-select: text;
+}
+
+.website-item .menuButton:before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/more.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 6px;
+    flex-shrink: 0;
+}
+
+.website-item .menuButton:hover {
+    cursor: pointer;
+    opacity: .95;
+}
+
+.website-item .menuButton:active {
+    opacity: .7;
+}
+
+.website-more {
+    background: #eeeeee;
+    display: inline-block;
+    padding: 10px 0;
+    border-radius: 5px;
+    user-select: none;
+    position: absolute;
+    min-width: 96px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+.website-more li {
+    padding: 3px 15px 3px 10px;
+}
+
+.website-more li:hover {
+    cursor: pointer;
+    background: #25315a;
+    color: #eeeeee;
+}
+
+.website-more li:before {
+    content: "-";
+}
+
+.website-more li:active {
+    color: #ffffff;
+    opacity: .9;
+}
+
+/*website item end*/
+
+
+/*website name start*/
+.website-name-large, .website-name-medium, .website-name-small {
+    flex-shrink: 0;
+    color: #eeeeee;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px 10px;
+    height: 70px;
+}
+
+.website-name-medium {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2px 7px;
+    height: 50px;
+}
+
+.website-name-small {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1px 5px;
+    height: 50px;
+}
+
+/*website name end*/
+
+/*label start*/
+.label {
+    display: inline-block;
+    max-width: 70px;
+    white-space: nowrap;
+    border-radius: 3px;
+    border: 2px solid #eeeeee;
+    font-size: 12px;
+    margin: 2px 3px;
+    padding: 2px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*label end*/
+
+
+/*username-block start*/
+.username-block, .website-name-block {
+    display: flex;
+    height: 150px;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: medium;
+    padding: 30px 15px 5px;
+}
+
+/*username-block end*/
+
+
+/*username start*/
+.username-large, .username-medium, .username-small {
+    display: flex;
+    height: 80px;
+    padding: 3px 5px;
+    font-size: 60px;
+    flex-shrink: 0;
+    margin: 5px 10px;
+    align-items: center;
+    font-weight: 900;
+}
+
+.username-medium {
+    height: 40px;
+    padding: 2px 3px;
+    font-size: 25px;
+    margin: 3px 5px;
+    font-weight: 800;
+}
+
+.username-small {
+    height: 25px;
+    padding: 1px 2px;
+    font-size: 16px;
+    margin: 1px 2px;
+    font-weight: 700;
+}
+
+/*username end*/
+
+
+/*comment start*/
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment textarea {
+    flex-grow: 1;
+    resize: none;
+    border: 3px solid #fff;
+    background: inherit;
+    min-height: 70px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Microsoft YaHei UI";
+    overflow: auto;
+    margin: 0 15px;
+    outline: none;
+}
+
+.comment .send {
+    display: inline-block;
+    width: 70px;
+    margin: 0;
+    flex-shrink: 0;
+    color: #eeeeee;
+    background-color: #0d50cc;
+    padding: 10px 15px;
+    text-wrap: avoid;
+    border-radius: 5px;
+    border: 3px solid #eeeeee;
+    font-size: 17px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.comment .send:hover {
+    background: rgba(13, 80, 204, 0.86);
+    transition: .3s;
+}
+
+.comment .send:active {
+    transition: .5s;
+    background: #0b3e9c;
+}
+
+.comment-block .username-medium:after, .comment .username-medium:after {
+    content: ":";
+}
+
+.comment-block {
+    color: #eeeeee;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.comment-block .comment-content {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.comment-block .replay {
+    cursor: pointer;
+    margin: 0;
+}
+
+/*comment end*/
+
+
+/*login start*/
+.login-text a {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#login {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    color: #eeeeee;
+    -webkit-user-select: none;
+
+}
+
+#login-title, #signUp-title {
+    font-size: 16px;
+    font-weight: bold;
+    /*display: inline-block;*/
+    transition: .5s;
+    /*height: 51px;*/
+}
+
+#login-title:hover, #signUp-title:hover {
+    cursor: pointer;
+}
+
+#login .active {
+    font-size: 40px;
+}
+
+
+#login input {
+    width: 100%;
+    min-width: 300px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #7e5ba4;
+    background: #45315a;
+    border-radius: 10px 0;
+    margin: 15px 5px;
+    padding-left: 10px;
+    color: #eeeeee;
+    font-size: 20px;
+}
+
+#login input:focus {
+    /*error #e91e63
+    success #4caf50
+     */
+    border: 2px solid #a77bd3;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+#login input:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+#login #form div {
+    text-align: left;
+}
+
+#login #form #submit {
+    text-align: center;
+    border-radius: 15px 0;
+    display: inline-block;
+    border: 2px solid #4caf50;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#login #form #submit:hover {
+    background-color: #4caf50;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+#login #form #submit:active {
+    background-color: #4bcb4f;
+    border: 2px solid #4bcb4f;
+}
+
+#login .form-title {
+    transform: translateX(20px) translateY(50px);
+    transition: .5s;
+    display: table-cell;
+}
+
+#login .form-title:hover {
+    cursor: text;
+}
+
+/*login end*/
+
+
+/*message start*/
+.message {
+    display: inline-block;
+    position: fixed;
+    color: #eeeeee;
+    font-size: 30px;
+    background: #24315a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 15%;
+    animation: show .5s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes show {
+    0% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*message end*/

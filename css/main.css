@@ -1,0 +1,81 @@
+a, body, div, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, html, iframe, img, label, li, ol, p, span, table, tbody, td, tfoot, th, thead, tr, tt, ul {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Microsoft YaHei UI";
+    list-style-type: none;
+    /*transition: 0.3s;*/
+}
+html{
+    min-width: 700px;
+}
+
+
+#HeadBlock{
+    background: rgba(23, 37, 81, 0.94);
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 15px solid rgb(68, 180, 159);
+}
+#HeadBlock div{
+    /*display: inline-block;*/
+}
+#ContentBlock{
+    background-color: #46325b;
+    padding: 0 10% 5%;
+    max-width: 2000px;
+    min-height: 500px;
+}
+
+#FooterBlock{
+    width: 100%;
+    position: relative;
+    background: #25325b;
+    bottom: 0;
+    min-height: 300px;
+}
+#FooterBlock #Footer{
+    padding: 30px 50px;
+    text-align: center;
+}
+#FooterBlock #Footer .footerListBlock{
+    padding: 0 50px;
+    display: inline-flex;
+}
+#FooterBlock #Footer .footerListBlock ul{
+    padding: 0 10px;
+}
+#FooterBlock #Footer .footerListBlock ul li{
+    padding: 20px 0 0;
+}
+#FooterBlock #Footer .footerListBlock ul li h1{
+    font-size: 30px;
+    color: #ffffff;
+}
+#FooterBlock #Footer .footerListBlock ul li h2 a{
+    font-size: 20px;
+    color: #dcdcdc;
+}
+#FooterBlock #Footer .footerListBlock ul li h2 a:hover{
+    transition: .3s;
+    color: #ffffff;
+}
+.notFound{
+    display: inline-block;
+    font-size: 150%;
+    color: white;
+    margin: 10%;
+    transition: .3s;
+    /*transform: rotate(1rad);*/
+}
+
+
+
+
+
+
+
+

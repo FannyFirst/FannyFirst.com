@@ -1,0 +1,26 @@
+.TransverseTab {
+    display: none;
+}
+
+.Search {
+    display: none;
+}
+
+#Logo {
+    position: unset;
+    padding: 10px 0;
+}
+
+.Menu {
+    display: block;
+}
+
+#FooterBlock #Footer .footerListBlock {
+    display: block;
+}
+.carousel{
+    display: none;
+}
+.website-item div .labels{
+    display: none;
+}
