@@ -167,7 +167,7 @@
             $(this).parents(".titleTab").children("li").removeClass("DisplayUnderline");
             $(this).parents("li").addClass("DisplayUnderline");
         }).on("click", ".Menu", function () {
-            const [m0, m1, m2] = ["#menu_0", "#menu_1", "#menu_2"];
+            const [m0, m1, m2] = ["#menu_0", "#menu_1", "#menu_2"],list = ".TransverseTab";
             if ($(this).data("opened") === 1) {
                 $(this).css("transform-origin", "50% 50%");
                 $(m0).css({
@@ -182,7 +182,9 @@
                     "animation": "flyIn .3s",
                     "transform": "rotate(0)"
                 });
+                $(list).css("display","none");
                 $(this).data("opened", 0);
+
                 return;
             }
             $(m0).css({
@@ -197,6 +199,11 @@
                 "animation": "Rotate1 .3s",
                 "transform": "rotate(-45deg)"
             });
+            $("body").one("click",function () {
+                $(list).css("display","none");
+                $(".Menu").data("opened",1).click()
+            });
+            $(list).css("display","block");
             $(this).data("opened", 1);
         }).on("click", ".tags li a", function () {
             let location = $(this).data("location");

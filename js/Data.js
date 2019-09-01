@@ -306,7 +306,7 @@ let Data = function () {
                 class: "login-text",
                 children: [{
                     tagName: "a",
-                    href: "#",
+                    href: "../login",
                     text: "登陆/注册"
                 }]
             },

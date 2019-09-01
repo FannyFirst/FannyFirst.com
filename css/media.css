@@ -1,0 +1,94 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+    #ContentList {
+        /*width: 100%;*/
+    }
+
+    .TransverseTab {
+        display: none;
+        position: absolute;
+        top: 115px;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        margin: 0;
+        background: #00000078;
+    }
+
+    .Search {
+        display: none;
+    }
+
+    #Logo {
+        position: unset;
+        padding: 10px 0;
+    }
+
+    .Menu {
+        display: block;
+    }
+
+    #FooterBlock #Footer .footerListBlock {
+        display: block;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .website-item div .labels {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /*.TransverseTab {
+        display: none;
+        position: absolute;
+        top: 115px;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        margin: 0;
+        background: #00000078;
+    }
+    .Search {
+        display: none;
+    }
+
+    #Logo {
+        position: unset;
+        padding: 10px 0;
+    }
+
+    .Menu {
+        display: block;
+    }
+
+    #FooterBlock #Footer .footerListBlock {
+        display: block;
+    }
+    .carousel{
+        display: none;
+    }
+    .website-item div .labels{
+        display: none;
+    }*/
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

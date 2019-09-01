@@ -162,14 +162,8 @@ a:active {
     font-size: 30px;
 }
 
-/*纵向*/
-.PortraitTab {
 
-}
 
-.PortraitTab .PortraitTabContent {
-
-}
 
 /*图片转盘*/
 .carousel {
@@ -641,6 +635,7 @@ a:active {
     padding: 5px 10px;
     border-radius: 5px;
     top: 15%;
+    z-index: 3;
     animation: show .5s;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
 }
