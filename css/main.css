@@ -7,7 +7,7 @@ a, body, div, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, html, iframe, img, label
     /*transition: 0.3s;*/
 }
 html{
-    min-width: 700px;
+    min-width: 300px;
 }
 
 

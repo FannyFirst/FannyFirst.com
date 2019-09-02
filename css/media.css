@@ -1,7 +1,10 @@
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     #ContentList {
         /*width: 100%;*/
+    }
+    #ContentBlock{
+        padding: 0;
     }
 
     .TransverseTab {
@@ -26,6 +29,7 @@
 
     .Menu {
         display: block;
+        margin-bottom: -9px;
     }
 
     #FooterBlock #Footer .footerListBlock {
@@ -39,42 +43,18 @@
     .website-item div .labels {
         display: none;
     }
+    .website-item{
+        border-radius: 0;
+    }
+    .website-item .website-introduce{
+        max-width: 175px;
+        margin-right: 0;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    /*.TransverseTab {
-        display: none;
-        position: absolute;
-        top: 115px;
-        width: 100%;
-        left: 0;
-        z-index: 1;
-        margin: 0;
-        background: #00000078;
-    }
-    .Search {
-        display: none;
-    }
 
-    #Logo {
-        position: unset;
-        padding: 10px 0;
-    }
-
-    .Menu {
-        display: block;
-    }
-
-    #FooterBlock #Footer .footerListBlock {
-        display: block;
-    }
-    .carousel{
-        display: none;
-    }
-    .website-item div .labels{
-        display: none;
-    }*/
 
 }
 
